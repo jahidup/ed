@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore the vibrant campus life at Future Edge Academy — events, classroom activities, sports, and more in our photo gallery." />
+  <title>Gallery — Future Edge Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="preloader-logo">⚡ Future Edge Academy</div>
+    <div class="preloader-bar"><div class="preloader-progress"></div></div>
+    <div class="preloader-text">Loading Gallery...</div>
+  </div>
+
+  <div class="page-transition"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="bg-animated"></div>
+  <div class="bg-grid"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <div class="nav-logo-icon">⚡</div>
+        <span class="nav-logo-text">Future Edge</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html"   class="nav-link">Home</a></li>
+        <li><a href="about.html"      class="nav-link">About</a></li>
+        <li><a href="courses.html"    class="nav-link">Academics</a></li>
+        <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+        <li><a href="gallery.html"    class="nav-link active">Gallery</a></li>
+        <li><a href="notice.html"     class="nav-link">News</a></li>
+        <li><a href="contact.html"    class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+        <a href="admissions.html" class="btn-nav">Apply Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../index.html"  class="nav-link">Home</a>
+    <a href="about.html"     class="nav-link">About</a>
+    <a href="courses.html"   class="nav-link">Academics</a>
+    <a href="admissions.html" class="nav-link">Admissions</a>
+    <a href="gallery.html"   class="nav-link">Gallery</a>
+    <a href="notice.html"    class="nav-link">News</a>
+    <a href="contact.html"   class="nav-link">Contact</a>
+    <a href="admissions.html" class="btn btn-primary" style="margin-top:16px">Apply Now →</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+    </div>
+    <div class="container">
+      <div class="section-badge" style="margin-bottom:20px;display:inline-flex;"><i class="fas fa-images"></i> Visual Stories</div>
+      <h1 class="page-hero-title">Our <span class="gradient-text">Gallery</span></h1>
+      <div class="page-hero-breadcrumb">
+        <a href="../index.html">Home</a>
+        <i class="fas fa-chevron-right" style="font-size:0.7rem;"></i>
+        <span>Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge reveal"><i class="fas fa-filter"></i> Browse by Category</div>
+        <h2 class="section-title reveal">Moments that <span class="gradient-text">Define Us</span></h2>
+        <p class="section-subtitle reveal">Every photo tells a story of passion, excellence, and the vibrant life at Future Edge Academy.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="gallery-filters reveal">
+        <button class="tab-btn gallery-filter active" data-filter="all">All</button>
+        <button class="tab-btn gallery-filter" data-filter="events">🎉 Events</button>
+        <button class="tab-btn gallery-filter" data-filter="campus">🏫 Campus</button>
+        <button class="tab-btn gallery-filter" data-filter="activities">🎭 Activities</button>
+        <button class="tab-btn gallery-filter" data-filter="sports">⚽ Sports</button>
+        <button class="tab-btn gallery-filter" data-filter="stem">🤖 STEM</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid reveal">
+
+        <!-- Row 1 -->
+        <div class="gallery-item tall" data-category="campus">
+          <div class="gallery-thumb">🏫</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-title">Main Campus Entrance</div>
+            <div class="gallery-overlay-cat">Campus</div>
+          </div>
+          <button class="gallery-zoom-btn" aria-label="Zoom"><i class="fas fa-expand"></i></button>
+        </div>
+
+        <div class="gallery-item" data-category="events">
+          <div class="gallery-thumb">🎊</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-title">Annual Day Celebration 2024</div>
+            <div class="gallery-overlay-cat">Events</div>
+          </div>
+          <button class="gallery-zoom-btn" aria-label="Zoom"><i class="fas fa-expand"></i></button>
+        </div>
+
+        <div class="gallery-item" data-category="stem">
+          <div class="gallery-thumb">🤖</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-title">Robotics Championship</div>
+            <div class="gallery-overlay-cat">STEM</div>
+          </div>
+          <button class="gallery-zoom-btn" aria-label="Zoom"><i class="fas fa-expand"></i></button>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="gallery-item wide" data-category="events">
+          <div class="gallery-thumb">🎓</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-title">Graduation Ceremony 2024 — Class XII Farewell</div>
+            <div class="gallery-overlay-cat">Events</div>
+          </div>
+          <button class="gallery-zoom-btn" aria-label="Zoom"><i class="fas fa-expand"></i></button>
+        </div>
+
+        <div class="gallery-item" data-category="sports">
+          <div class="gallery-thumb">🏆</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-title">State Football Championship</div>
+            <div class="gallery-overlay-cat">Sports</div>
+          </div>
+          <button class="gallery-zoom-btn" aria-label="Zoom"><i class="fas fa-expand"></i></button>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="gallery-item" data-category="activities">
+          <div class="gallery-thumb">🎭</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-title">Annual Theatre Production</div>
+            <div class="gallery-overlay-cat">Activities</div>
+          </div>
+          <button class="gallery-zoom-btn" aria-label="Zoom"><i class="fas fa-expand"></i></button>
+        </div>
+
+        <div class="gallery-item" data-category="stem">
+          <div class="gallery-thumb">🔬</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-title">Science Exhibition 2024</div>
+            <div class="gallery-overlay-cat">STEM</div>
+          </div>
+          <button class="gallery-zoom-btn" aria-label="Zoom"><i class="fas fa-expand"></i></button>
+        </div>
+
+        <div class="gallery-item" data-category="campus">
+          <div class="gallery-thumb">📚</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-title">State-of-the-Art Library</div>
+            <div class="gallery-overlay-cat">Campus</div>
+          </div>
+          <button class="gallery-zoom-btn" aria-label="Zoom"><i class="fas fa-expand"></i></button>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="gallery-item" data-category="sports">
+          <div class="gallery-thumb">🏊</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-title">Olympic Swimming Pool</div>
+            <div class="gallery-overlay-cat">Sports</div>
+          </div>
+          <button class="gallery-zoom-btn" aria-label="Zoom"><i class="fas fa-expand"></i></button>
+        </div>
+
+        <div class="gallery-item tall" data-category="activities">
+          <div class="gallery-thumb">🎨</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-title">Art & Culture Week</div>
+            <div class="gallery-overlay-cat">Activities</div>
+          </div>
+          <button class="gallery-zoom-btn" aria-label="Zoom"><i class="fas fa-expand"></i></button>
+        </div>
+
+        <div class="gallery-item" data-category="campus">
+          <div class="gallery-thumb">🖥️</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-title">AI Innovation Lab</div>
+            <div class="gallery-overlay-cat">Campus</div>
+          </div>
+          <button class="gallery-zoom-btn" aria-label="Zoom"><i class="fas fa-expand"></i></button>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="gallery-item" data-category="events">
+          <div class="gallery-thumb">🌏</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-title">Model United Nations 2024</div>
+            <div class="gallery-overlay-cat">Events</div>
+          </div>
+          <button class="gallery-zoom-btn" aria-label="Zoom"><i class="fas fa-expand"></i></button>
+        </div>
+
+        <div class="gallery-item" data-category="sports">
+          <div class="gallery-thumb">🏸</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-title">Inter-School Badminton</div>
+            <div class="gallery-overlay-cat">Sports</div>
+          </div>
+          <button class="gallery-zoom-btn" aria-label="Zoom"><i class="fas fa-expand"></i></button>
+        </div>
+
+        <div class="gallery-item" data-category="activities">
+          <div class="gallery-thumb">🎵</div>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-title">Music & Dance Showcase</div>
+            <div class="gallery-overlay-cat">Activities</div>
+          </div>
+          <button class="gallery-zoom-btn" aria-label="Zoom"><i class="fas fa-expand"></i></button>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:48px;" class="reveal">
+        <p style="color:var(--text-secondary);margin-bottom:20px;">Can't find what you're looking for?</p>
+        <a href="contact.html" class="btn btn-outline"><i class="fas fa-envelope"></i> Request More Photos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-content" id="lightboxContent"></div>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-nav lightbox-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox"><i class="fas fa-times"></i></button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo"><div class="nav-logo-icon">⚡</div><span class="nav-logo-text">Future Edge Academy</span></a>
+          <p class="footer-desc">A futuristic school where technology meets passion, transforming how students learn, grow, and lead.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div><h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div><h4 class="footer-heading">Gallery Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#">Events & Festivals</a></li>
+            <li><a href="#">Campus Life</a></li>
+            <li><a href="#">Sports Activities</a></li>
+            <li><a href="#">STEM Lab</a></li>
+            <li><a href="#">Performing Arts</a></li>
+          </ul>
+        </div>
+        <div><h4 class="footer-heading">Contact</h4>
+          <p style="color:var(--text-secondary);font-size:0.85rem;line-height:1.8;"><i class="fas fa-map-marker-alt" style="color:var(--neon-blue);margin-right:8px;"></i>123 Innovation Drive, Tech City<br><i class="fas fa-phone" style="color:var(--neon-blue);margin-right:8px;"></i>+91 98765 43210</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 <span>Future Edge Academy</span>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Stay updated with the latest news, announcements, and events from Future Edge Academy. Read our blog-style notices and updates." />
+  <title>News & Notices — Future Edge Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="preloader-logo">⚡ Future Edge Academy</div>
+    <div class="preloader-bar"><div class="preloader-progress"></div></div>
+    <div class="preloader-text">Loading News & Notices...</div>
+  </div>
+
+  <div class="page-transition"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="bg-animated"></div>
+  <div class="bg-grid"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <div class="nav-logo-icon">⚡</div>
+        <span class="nav-logo-text">Future Edge</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html"   class="nav-link">Home</a></li>
+        <li><a href="about.html"      class="nav-link">About</a></li>
+        <li><a href="courses.html"    class="nav-link">Academics</a></li>
+        <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+        <li><a href="gallery.html"    class="nav-link">Gallery</a></li>
+        <li><a href="notice.html"     class="nav-link active">News</a></li>
+        <li><a href="contact.html"    class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+        <a href="admissions.html" class="btn-nav">Apply Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../index.html"  class="nav-link">Home</a>
+    <a href="about.html"     class="nav-link">About</a>
+    <a href="courses.html"   class="nav-link">Academics</a>
+    <a href="admissions.html" class="nav-link">Admissions</a>
+    <a href="gallery.html"   class="nav-link">Gallery</a>
+    <a href="notice.html"    class="nav-link">News</a>
+    <a href="contact.html"   class="nav-link">Contact</a>
+    <a href="admissions.html" class="btn btn-primary" style="margin-top:16px">Apply Now →</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+    </div>
+    <div class="container">
+      <div class="section-badge" style="margin-bottom:20px;display:inline-flex;"><i class="fas fa-newspaper"></i> Latest Updates</div>
+      <h1 class="page-hero-title">News & <span class="gradient-text">Notices</span></h1>
+      <div class="page-hero-breadcrumb">
+        <a href="../index.html">Home</a>
+        <i class="fas fa-chevron-right" style="font-size:0.7rem;"></i>
+        <span>News & Notices</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="notice-layout">
+
+        <!-- Main Content -->
+        <div>
+          <div class="section-header" style="text-align:left;margin-bottom:36px;">
+            <div class="section-badge reveal"><i class="fas fa-bolt"></i> Fresh Off the Press</div>
+            <h2 class="section-title reveal" style="text-align:left;">Latest <span class="gradient-text">Stories</span></h2>
+          </div>
+
+          <!-- Category Filter -->
+          <div class="courses-tabs reveal" style="justify-content:flex-start;margin-bottom:36px;overflow-x:auto;flex-wrap:nowrap;">
+            <button class="tab-btn active">All</button>
+            <button class="tab-btn">Announcements</button>
+            <button class="tab-btn">Events</button>
+            <button class="tab-btn">Achievements</button>
+            <button class="tab-btn">Academic</button>
+          </div>
+
+          <div class="notice-grid">
+
+            <!-- Story 1 -->
+            <div class="glass-card notice-card reveal reveal-delay-1">
+              <div class="notice-card-img" style="background:linear-gradient(135deg,rgba(0,212,255,0.12),rgba(168,85,247,0.08));">
+                🏆
+              </div>
+              <div class="notice-card-body">
+                <div class="notice-card-meta">
+                  <div class="notice-date"><i class="fas fa-calendar-alt" style="color:var(--neon-blue);"></i> Apr 10, 2025</div>
+                  <span class="notice-category" style="background:rgba(6,255,165,0.12);color:var(--neon-cyan);border:1px solid rgba(6,255,165,0.3);">Achievement</span>
+                </div>
+                <h3 class="notice-card-title">Students Win Gold at National Robotics Olympiad 2025</h3>
+                <p class="notice-card-text">A team of six Class XI students clinched three gold medals and one silver at the 14th National Robotics Olympiad held in Bangalore, competing against 320+ schools.</p>
+                <a href="#" class="notice-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Story 2 -->
+            <div class="glass-card notice-card reveal reveal-delay-2">
+              <div class="notice-card-img" style="background:linear-gradient(135deg,rgba(168,85,247,0.12),rgba(236,72,153,0.08));">
+                🎓
+              </div>
+              <div class="notice-card-body">
+                <div class="notice-card-meta">
+                  <div class="notice-date"><i class="fas fa-calendar-alt" style="color:var(--neon-blue);"></i> Apr 5, 2025</div>
+                  <span class="notice-category" style="background:rgba(168,85,247,0.12);color:var(--neon-purple);border:1px solid rgba(168,85,247,0.3);">Academic</span>
+                </div>
+                <h3 class="notice-card-title">Board Results 2025: 100% Pass Rate with 18 Distinctions</h3>
+                <p class="notice-card-text">Future Edge Academy achieves a historic 100% pass rate in CBSE Class X & XII board exams, with 18 students scoring above 95% aggregate.</p>
+                <a href="#" class="notice-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Story 3 -->
+            <div class="glass-card notice-card reveal reveal-delay-3">
+              <div class="notice-card-img" style="background:linear-gradient(135deg,rgba(251,191,36,0.12),rgba(239,68,68,0.08));">
+                🎊
+              </div>
+              <div class="notice-card-body">
+                <div class="notice-card-meta">
+                  <div class="notice-date"><i class="fas fa-calendar-alt" style="color:var(--neon-blue);"></i> Mar 25, 2025</div>
+                  <span class="notice-category" style="background:rgba(251,191,36,0.12);color:#fbbf24;border:1px solid rgba(251,191,36,0.3);">Event</span>
+                </div>
+                <h3 class="notice-card-title">Annual Day 2025: "IGNITE" — A Night to Remember</h3>
+                <p class="notice-card-text">Over 3,000 students, parents, and educators gathered for our spectacular Annual Day celebration featuring cultural performances, robotics demos, and award ceremonies.</p>
+                <a href="#" class="notice-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Story 4 -->
+            <div class="glass-card notice-card reveal reveal-delay-4">
+              <div class="notice-card-img" style="background:linear-gradient(135deg,rgba(6,255,165,0.12),rgba(0,212,255,0.08));">
+                🤝
+              </div>
+              <div class="notice-card-body">
+                <div class="notice-card-meta">
+                  <div class="notice-date"><i class="fas fa-calendar-alt" style="color:var(--neon-blue);"></i> Mar 18, 2025</div>
+                  <span class="notice-category" style="background:rgba(0,212,255,0.12);color:var(--neon-blue);border:1px solid rgba(0,212,255,0.3);">Announcement</span>
+                </div>
+                <h3 class="notice-card-title">Future Edge Signs MOU with IIT Delhi for Student Research Program</h3>
+                <p class="notice-card-text">In a landmark partnership, Future Edge Academy has signed a Memorandum of Understanding with IIT Delhi, enabling Class XI & XII students to participate in guided research projects.</p>
+                <a href="#" class="notice-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Story 5 -->
+            <div class="glass-card notice-card reveal reveal-delay-5">
+              <div class="notice-card-img" style="background:linear-gradient(135deg,rgba(255,0,110,0.12),rgba(168,85,247,0.08));">
+                🌍
+              </div>
+              <div class="notice-card-body">
+                <div class="notice-card-meta">
+                  <div class="notice-date"><i class="fas fa-calendar-alt" style="color:var(--neon-blue);"></i> Mar 10, 2025</div>
+                  <span class="notice-category" style="background:rgba(168,85,247,0.12);color:var(--neon-purple);border:1px solid rgba(168,85,247,0.3);">Event</span>
+                </div>
+                <h3 class="notice-card-title">Model UN 2025: Future Edge Hosts 600+ Delegates from 45 Schools</h3>
+                <p class="notice-card-text">Future Edge Academy hosted its annual Model United Nations conference with 600+ student delegates from 45 schools across India discussing global climate action and AI governance.</p>
+                <a href="#" class="notice-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Story 6 -->
+            <div class="glass-card notice-card reveal reveal-delay-6">
+              <div class="notice-card-img" style="background:linear-gradient(135deg,rgba(0,212,255,0.12),rgba(6,255,165,0.08));">
+                📚
+              </div>
+              <div class="notice-card-body">
+                <div class="notice-card-meta">
+                  <div class="notice-date"><i class="fas fa-calendar-alt" style="color:var(--neon-blue);"></i> Feb 28, 2025</div>
+                  <span class="notice-category" style="background:rgba(0,212,255,0.12);color:var(--neon-blue);border:1px solid rgba(0,212,255,0.3);">Announcement</span>
+                </div>
+                <h3 class="notice-card-title">Admissions Open for 2025–26: Apply Before April 30</h3>
+                <p class="notice-card-text">Admissions for the upcoming academic year are now open for Classes I through XII across all streams. Early applicants receive priority interview slots. Limited seats available.</p>
+                <a href="admissions.html" class="notice-read-more">Apply Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Pagination -->
+          <div class="reveal" style="display:flex;justify-content:center;gap:8px;margin-top:48px;">
+            <button class="tab-btn active" style="width:40px;height:40px;padding:0;border-radius:10px;">1</button>
+            <button class="tab-btn" style="width:40px;height:40px;padding:0;border-radius:10px;">2</button>
+            <button class="tab-btn" style="width:40px;height:40px;padding:0;border-radius:10px;">3</button>
+            <button class="tab-btn" style="width:40px;height:40px;padding:0;border-radius:10px;"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div>
+          <!-- Quick Notices -->
+          <div class="glass-card sidebar-card reveal" style="margin-bottom:20px;">
+            <div class="sidebar-card-title">📋 Quick Notices</div>
+            <div class="announcement-item">
+              <div class="announcement-dot"></div>
+              <div>
+                <div class="announcement-text">Parent-Teacher Meeting scheduled for April 20, 2025 (All classes)</div>
+                <div class="announcement-date">Apr 12, 2025</div>
+              </div>
+            </div>
+            <div class="announcement-item">
+              <div class="announcement-dot" style="background:var(--neon-purple);box-shadow:0 0 8px var(--neon-purple)"></div>
+              <div>
+                <div class="announcement-text">Science Fair 2025 registrations close April 25</div>
+                <div class="announcement-date">Apr 8, 2025</div>
+              </div>
+            </div>
+            <div class="announcement-item">
+              <div class="announcement-dot" style="background:var(--neon-cyan);box-shadow:0 0 8px var(--neon-cyan)"></div>
+              <div>
+                <div class="announcement-text">Summer camp enrollment open — June 5 to June 20</div>
+                <div class="announcement-date">Apr 5, 2025</div>
+              </div>
+            </div>
+            <div class="announcement-item">
+              <div class="announcement-dot"></div>
+              <div>
+                <div class="announcement-text">Swimming pool sessions resume May 2 (Classes VI–XII)</div>
+                <div class="announcement-date">Apr 1, 2025</div>
+              </div>
+            </div>
+            <div class="announcement-item">
+              <div class="announcement-dot" style="background:var(--neon-pink);box-shadow:0 0 8px var(--neon-pink)"></div>
+              <div>
+                <div class="announcement-text">Uniform guidelines update for 2025–26 session (see notice board)</div>
+                <div class="announcement-date">Mar 28, 2025</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upcoming Events -->
+          <div class="glass-card sidebar-card reveal reveal-delay-1" style="margin-bottom:20px;">
+            <div class="sidebar-card-title">📅 Upcoming Events</div>
+            <div style="display:flex;flex-direction:column;gap:14px;">
+              <div style="display:flex;gap:14px;align-items:center;">
+                <div style="width:48px;height:48px;border-radius:10px;background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.2);text-align:center;padding-top:6px;flex-shrink:0;">
+                  <div style="font-family:var(--font-display);font-size:1rem;font-weight:800;color:var(--neon-blue);">20</div>
+                  <div style="font-size:0.65rem;color:var(--text-secondary);letter-spacing:1px;margin-top:2px;">APR</div>
+                </div>
+                <div>
+                  <div style="font-family:var(--font-accent);font-size:0.9rem;font-weight:700;">Parent-Teacher Meet</div>
+                  <div style="font-size:0.8rem;color:var(--text-secondary);">All Grades • 9 AM – 1 PM</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:14px;align-items:center;">
+                <div style="width:48px;height:48px;border-radius:10px;background:rgba(168,85,247,0.1);border:1px solid rgba(168,85,247,0.2);text-align:center;padding-top:6px;flex-shrink:0;">
+                  <div style="font-family:var(--font-display);font-size:1rem;font-weight:800;color:var(--neon-purple);">25</div>
+                  <div style="font-size:0.65rem;color:var(--text-secondary);letter-spacing:1px;margin-top:2px;">APR</div>
+                </div>
+                <div>
+                  <div style="font-family:var(--font-accent);font-size:0.9rem;font-weight:700;">Science Fair 2025</div>
+                  <div style="font-size:0.8rem;color:var(--text-secondary);">Grades VI–XII • 10 AM – 4 PM</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:14px;align-items:center;">
+                <div style="width:48px;height:48px;border-radius:10px;background:rgba(6,255,165,0.1);border:1px solid rgba(6,255,165,0.2);text-align:center;padding-top:6px;flex-shrink:0;">
+                  <div style="font-family:var(--font-display);font-size:1rem;font-weight:800;color:var(--neon-cyan);">30</div>
+                  <div style="font-size:0.65rem;color:var(--text-secondary);letter-spacing:1px;margin-top:2px;">APR</div>
+                </div>
+                <div>
+                  <div style="font-family:var(--font-accent);font-size:0.9rem;font-weight:700;">Admissions Close</div>
+                  <div style="font-size:0.8rem;color:var(--text-secondary);">Last date for 2025–26</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Newsletter Sidebar -->
+          <div class="glass-card sidebar-card reveal reveal-delay-2">
+            <div class="sidebar-card-title">📮 Newsletter</div>
+            <p style="color:var(--text-secondary);font-size:0.85rem;line-height:1.6;margin-bottom:16px;">Get school news delivered to your inbox every week.</p>
+            <form class="newsletter-form" id="sidebarNewsletter" style="flex-direction:column;gap:10px;">
+              <input type="email" class="newsletter-input" placeholder="Your email address" required style="width:100%;" />
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:12px;"><i class="fas fa-bell"></i> Subscribe</button>
+            </form>
+          </div>
+
+          <!-- Tags -->
+          <div class="glass-card sidebar-card reveal reveal-delay-3" style="margin-top:20px;">
+            <div class="sidebar-card-title">🏷️ Tags</div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;">
+              <span style="padding:5px 14px;border-radius:8px;background:var(--bg-card);border:1px solid var(--border-glass);font-size:0.8rem;color:var(--text-secondary);cursor:pointer;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--neon-blue)';this.style.color='var(--neon-blue)';" onmouseout="this.style.borderColor='var(--border-glass)';this.style.color='var(--text-secondary)';">Robotics</span>
+              <span style="padding:5px 14px;border-radius:8px;background:var(--bg-card);border:1px solid var(--border-glass);font-size:0.8rem;color:var(--text-secondary);cursor:pointer;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--neon-blue)';this.style.color='var(--neon-blue)';" onmouseout="this.style.borderColor='var(--border-glass)';this.style.color='var(--text-secondary)';">Admissions</span>
+              <span style="padding:5px 14px;border-radius:8px;background:var(--bg-card);border:1px solid var(--border-glass);font-size:0.8rem;color:var(--text-secondary);cursor:pointer;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--neon-blue)';this.style.color='var(--neon-blue)';" onmouseout="this.style.borderColor='var(--border-glass)';this.style.color='var(--text-secondary)';">Events</span>
+              <span style="padding:5px 14px;border-radius:8px;background:var(--bg-card);border:1px solid var(--border-glass);font-size:0.8rem;color:var(--text-secondary);cursor:pointer;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--neon-blue)';this.style.color='var(--neon-blue)';" onmouseout="this.style.borderColor='var(--border-glass)';this.style.color='var(--text-secondary)';">CBSE</span>
+              <span style="padding:5px 14px;border-radius:8px;background:var(--bg-card);border:1px solid var(--border-glass);font-size:0.8rem;color:var(--text-secondary);cursor:pointer;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--neon-blue)';this.style.color='var(--neon-blue)';" onmouseout="this.style.borderColor='var(--border-glass)';this.style.color='var(--text-secondary)';">Sports</span>
+              <span style="padding:5px 14px;border-radius:8px;background:var(--bg-card);border:1px solid var(--border-glass);font-size:0.8rem;color:var(--text-secondary);cursor:pointer;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--neon-blue)';this.style.color='var(--neon-blue)';" onmouseout="this.style.borderColor='var(--border-glass)';this.style.color='var(--text-secondary)';">IIT</span>
+              <span style="padding:5px 14px;border-radius:8px;background:var(--bg-card);border:1px solid var(--border-glass);font-size:0.8rem;color:var(--text-secondary);cursor:pointer;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--neon-blue)';this.style.color='var(--neon-blue)';" onmouseout="this.style.borderColor='var(--border-glass)';this.style.color='var(--text-secondary)';">Model UN</span>
+              <span style="padding:5px 14px;border-radius:8px;background:var(--bg-card);border:1px solid var(--border-glass);font-size:0.8rem;color:var(--text-secondary);cursor:pointer;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--neon-blue)';this.style.color='var(--neon-blue)';" onmouseout="this.style.borderColor='var(--border-glass)';this.style.color='var(--text-secondary)';">AI Learning</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo"><div class="nav-logo-icon">⚡</div><span class="nav-logo-text">Future Edge Academy</span></a>
+          <p class="footer-desc">Pioneering the future of education through technology, innovation, and a student-first philosophy.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div><h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div><h4 class="footer-heading">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Achievements</a></li>
+            <li><a href="#">Academic Updates</a></li>
+            <li><a href="#">Holiday Notices</a></li>
+          </ul>
+        </div>
+        <div><h4 class="footer-heading">Contact</h4>
+          <p style="color:var(--text-secondary);font-size:0.85rem;line-height:1.8;"><i class="fas fa-map-marker-alt" style="color:var(--neon-blue);margin-right:8px;"></i>123 Innovation Drive, Tech City<br><i class="fas fa-phone" style="color:var(--neon-blue);margin-right:8px;"></i>+91 98765 43210<br><i class="fas fa-envelope" style="color:var(--neon-blue);margin-right:8px;"></i>info@futureedge.edu</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 <span>Future Edge Academy</span>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

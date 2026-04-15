@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Future Edge Academy – A futuristic AI-powered school delivering excellence in education, technology & innovation. Admissions open!" />
+  <meta name="keywords" content="Future Edge Academy, futuristic school, AI education, smart classroom, robotics lab, admissions" />
+  <meta name="author" content="Future Edge Academy" />
+  <meta property="og:title" content="Future Edge Academy — Education Redefined" />
+  <meta property="og:description" content="Step into the future of learning. AI-powered classrooms, world-class faculty, and a student-first community." />
+  <meta property="og:type" content="website" />
+  <title>Future Edge Academy — Education Redefined</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-logo">⚡ Future Edge Academy</div>
+    <div class="preloader-bar">
+      <div class="preloader-progress"></div>
+    </div>
+    <div class="preloader-text">Initializing Learning Environment...</div>
+  </div>
+
+  <!-- Page Transition -->
+  <div class="page-transition"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Animated Background -->
+  <div class="bg-animated"></div>
+  <div class="bg-grid"></div>
+
+  <!-- ═══════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">⚡</div>
+        <span class="nav-logo-text">Future Edge</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html"     class="nav-link active">Home</a></li>
+        <li><a href="pages/about.html"      class="nav-link">About</a></li>
+        <li><a href="pages/courses.html"    class="nav-link">Academics</a></li>
+        <li><a href="pages/admissions.html" class="nav-link">Admissions</a></li>
+        <li><a href="pages/gallery.html"    class="nav-link">Gallery</a></li>
+        <li><a href="pages/notice.html"     class="nav-link">News</a></li>
+        <li><a href="pages/contact.html"    class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle dark/light mode" id="themeToggle">
+          <i class="fas fa-sun"></i>
+        </button>
+        <a href="pages/admissions.html" class="btn-nav">Apply Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html"     class="nav-link">Home</a>
+    <a href="pages/about.html"      class="nav-link">About</a>
+    <a href="pages/courses.html"    class="nav-link">Academics</a>
+    <a href="pages/admissions.html" class="nav-link">Admissions</a>
+    <a href="pages/gallery.html"    class="nav-link">Gallery</a>
+    <a href="pages/notice.html"     class="nav-link">News</a>
+    <a href="pages/contact.html"    class="nav-link">Contact</a>
+    <a href="pages/admissions.html" class="btn btn-primary" style="margin-top:16px">Apply Now →</a>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════ -->
+  <section class="hero" id="home">
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+    </div>
+
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Ranked #1 Futuristic School 2025
+        </div>
+
+        <h1 class="hero-title">
+          <span class="line"><span>Education</span></span>
+          <span class="line"><span class="gradient-text">Reimagined for</span></span>
+          <span class="line"><span>the Future</span></span>
+        </h1>
+
+        <div class="typing-wrapper">
+          <span class="typing-prefix">We believe in</span>
+          <span class="typing-text" id="typingText"></span><span class="typing-cursor"></span>
+        </div>
+
+        <p class="hero-desc">
+          Future Edge Academy is where curiosity meets cutting-edge technology. 
+          Our AI-powered curriculum, world-class faculty, and immersive learning environments 
+          prepare students to lead in a rapidly evolving world.
+        </p>
+
+        <div class="hero-actions">
+          <a href="pages/courses.html" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> Explore Programs
+          </a>
+          <a href="pages/admissions.html" class="btn btn-outline">
+            <i class="fas fa-graduation-cap"></i> Apply for Admission
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-num">5000+</div>
+            <div class="hero-stat-label">Students</div>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">200+</div>
+            <div class="hero-stat-label">Faculty</div>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">15+</div>
+            <div class="hero-stat-label">Years of Excellence</div>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">98%</div>
+            <div class="hero-stat-label">Pass Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Visual -->
+    <div class="hero-visual">
+      <div class="hero-ring-container">
+        <div class="hero-ring hero-ring-1">
+          <div class="hero-ring-dot"></div>
+        </div>
+        <div class="hero-ring hero-ring-2">
+          <div class="hero-ring-dot"></div>
+        </div>
+        <div class="hero-ring hero-ring-3">
+          <div class="hero-ring-dot"></div>
+        </div>
+        <div class="hero-center-badge">
+          <div class="hero-center-icon">🎓</div>
+          <div class="hero-center-text">Future<br>Edge<br>Academy</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span class="scroll-indicator-text">Scroll</span>
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FEATURES SECTION
+  ═══════════════════════════════════ -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge reveal"><i class="fas fa-star"></i> Why Choose Us</div>
+        <h2 class="section-title reveal">Pioneering the <span class="gradient-text">Next Generation</span><br>of Learning</h2>
+        <p class="section-subtitle reveal">Our campus is designed to ignite curiosity, foster innovation, and produce globally competitive graduates.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="glass-card feature-card reveal reveal-delay-1">
+          <div class="feature-icon-wrap icon-blue">🤖</div>
+          <h3 class="feature-title">AI-Powered Learning</h3>
+          <p class="feature-desc">Personalized AI-driven curricula adapt to each student's pace and learning style, maximizing comprehension and retention.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="glass-card feature-card reveal reveal-delay-2">
+          <div class="feature-icon-wrap icon-purple">🖥️</div>
+          <h3 class="feature-title">Smart Classrooms</h3>
+          <p class="feature-desc">Interactive holographic boards, IoT-connected labs, and immersive AR/VR environments redefine the classroom experience.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="glass-card feature-card reveal reveal-delay-3">
+          <div class="feature-icon-wrap icon-cyan">🦾</div>
+          <h3 class="feature-title">Robotics & STEM Lab</h3>
+          <p class="feature-desc">State-of-the-art robotics, 3D printing, and electronics labs empower students to build real-world solutions.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="glass-card feature-card reveal reveal-delay-4">
+          <div class="feature-icon-wrap icon-pink">🌍</div>
+          <h3 class="feature-title">Global Exposure</h3>
+          <p class="feature-desc">Student exchange programs, international competitions, and MUN conferences build a global perspective from day one.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="glass-card feature-card reveal reveal-delay-5">
+          <div class="feature-icon-wrap icon-yellow">🏅</div>
+          <h3 class="feature-title">Award-Winning Faculty</h3>
+          <p class="feature-desc">Our educators are PhD scholars, industry professionals, and national award recipients who inspire excellence.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="glass-card feature-card reveal reveal-delay-6">
+          <div class="feature-icon-wrap icon-green">💚</div>
+          <h3 class="feature-title">Sustainable Campus</h3>
+          <p class="feature-desc">Solar-powered buildings, green spaces, and a zero-waste policy create an eco-conscious learning environment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       STATS SECTION
+  ═══════════════════════════════════ -->
+  <section class="section-sm" style="background:rgba(0,212,255,0.03);border-top:1px solid rgba(0,212,255,0.08);border-bottom:1px solid rgba(0,212,255,0.08);">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="glass-card stat-card reveal reveal-delay-1">
+          <div class="stat-number" data-count="5000" data-suffix="+">0+</div>
+          <div class="stat-label">Students Enrolled</div>
+        </div>
+        <div class="glass-card stat-card reveal reveal-delay-2">
+          <div class="stat-number" data-count="200" data-suffix="+">0+</div>
+          <div class="stat-label">Expert Teachers</div>
+        </div>
+        <div class="glass-card stat-card reveal reveal-delay-3">
+          <div class="stat-number" data-count="350" data-suffix="+">0+</div>
+          <div class="stat-label">Awards & Trophies</div>
+        </div>
+        <div class="glass-card stat-card reveal reveal-delay-4">
+          <div class="stat-number" data-count="98" data-suffix="%">0%</div>
+          <div class="stat-label">Board Pass Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       COURSES PREVIEW
+  ═══════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge reveal"><i class="fas fa-book-open"></i> Academics</div>
+        <h2 class="section-title reveal">Our <span class="gradient-text">Academic Programs</span></h2>
+        <p class="section-subtitle reveal">From kindergarten to senior secondary, every program is crafted for excellence and real-world readiness.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="glass-card feature-card reveal reveal-delay-1" style="text-align:center;">
+          <div class="feature-icon-wrap icon-blue" style="margin:0 auto 20px;">🌱</div>
+          <h3 class="feature-title">Primary School</h3>
+          <p class="feature-desc">Classes I–V: Foundation building through play-based, activity-driven pedagogy with AI tools.</p>
+          <a href="pages/courses.html" class="btn btn-outline" style="margin-top:20px;padding:10px 24px;font-size:0.9rem;">Explore →</a>
+        </div>
+        <div class="glass-card feature-card reveal reveal-delay-2" style="text-align:center;">
+          <div class="feature-icon-wrap icon-purple" style="margin:0 auto 20px;">📚</div>
+          <h3 class="feature-title">Secondary School</h3>
+          <p class="feature-desc">Classes VI–X: CBSE curriculum enhanced with coding, robotics, and critical thinking modules.</p>
+          <a href="pages/courses.html" class="btn btn-outline" style="margin-top:20px;padding:10px 24px;font-size:0.9rem;">Explore →</a>
+        </div>
+        <div class="glass-card feature-card reveal reveal-delay-3" style="text-align:center;">
+          <div class="feature-icon-wrap icon-cyan" style="margin:0 auto 20px;">🎓</div>
+          <h3 class="feature-title">Senior Secondary</h3>
+          <p class="feature-desc">Classes XI–XII: Science, Commerce & Arts with expert mentoring and competitive exam coaching.</p>
+          <a href="pages/courses.html" class="btn btn-outline" style="margin-top:20px;padding:10px 24px;font-size:0.9rem;">Explore →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════ -->
+  <section class="section" style="overflow:hidden;">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge reveal"><i class="fas fa-heart"></i> Testimonials</div>
+        <h2 class="section-title reveal">What Our <span class="gradient-text">Community Says</span></h2>
+        <p class="section-subtitle reveal">Hear from students, parents, and alumni who have experienced the Future Edge difference.</p>
+      </div>
+
+      <div class="testimonials-slider reveal">
+        <div class="testimonials-track">
+          <!-- Testimonial 1 -->
+          <div class="glass-card testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Future Edge Academy completely transformed how I think about learning. The AI lab and smart classrooms gave me skills that no other school in the city offers. I got into IIT on my first attempt!</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">AR</div>
+              <div>
+                <div class="testimonial-name">Aryan Raj</div>
+                <div class="testimonial-role">Alumni, IIT Delhi (2024)</div>
+                <div class="testimonial-stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="glass-card testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">As a parent, I couldn't be happier. The school maintains the perfect balance between technology and holistic development. My daughter is more confident, curious, and passionate than ever.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background:linear-gradient(135deg,#a855f7,#ec4899);">PM</div>
+              <div>
+                <div class="testimonial-name">Priya Mehta</div>
+                <div class="testimonial-role">Parent of Class X Student</div>
+                <div class="testimonial-stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="glass-card testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">The robotics lab and STEM programs here are world-class. I represented India in the International Robotics Olympiad and won a silver medal, all thanks to the incredible training I received here.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background:linear-gradient(135deg,#06ffa5,#00d4ff);">SK</div>
+              <div>
+                <div class="testimonial-name">Sneha Kumar</div>
+                <div class="testimonial-role">Class XII Student</div>
+                <div class="testimonial-stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="glass-card testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Teaching at Future Edge Academy is a privilege. The administration supports innovative pedagogy, and seeing students discover their passion every day makes this job extraordinary.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444);">DS</div>
+              <div>
+                <div class="testimonial-name">Dr. Sunita Sharma</div>
+                <div class="testimonial-role">Physics Faculty</div>
+                <div class="testimonial-stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="glass-card testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">I was shy and lacked confidence before joining this school. The leadership programs, debates, and extracurricular activities helped me discover myself. This school is truly life-changing!</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background:linear-gradient(135deg,#8b5cf6,#06ffa5);">RK</div>
+              <div>
+                <div class="testimonial-name">Riya Kapoor</div>
+                <div class="testimonial-role">Class XI Student</div>
+                <div class="testimonial-stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn slider-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-dots">
+          <button class="slider-dot active" aria-label="Slide 1"></button>
+          <button class="slider-dot" aria-label="Slide 2"></button>
+          <button class="slider-dot" aria-label="Slide 3"></button>
+          <button class="slider-dot" aria-label="Slide 4"></button>
+          <button class="slider-dot" aria-label="Slide 5"></button>
+        </div>
+        <button class="slider-btn slider-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section-sm" style="text-align:center;background:linear-gradient(135deg,rgba(0,212,255,0.08),rgba(168,85,247,0.08));border-top:1px solid rgba(0,212,255,0.1);border-bottom:1px solid rgba(168,85,247,0.1);">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title" style="margin-bottom:12px;">Ready to Join the <span class="gradient-text">Future?</span></h2>
+        <p class="section-subtitle" style="margin-bottom:36px;">Applications for the 2025–26 academic session are now open. Limited seats available.</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+          <a href="pages/admissions.html" class="btn btn-primary">Apply Now <i class="fas fa-arrow-right"></i></a>
+          <a href="pages/contact.html" class="btn btn-outline">Schedule a Visit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">⚡</div>
+            <span class="nav-logo-text">Future Edge Academy</span>
+          </a>
+          <p class="footer-desc">Pioneering the future of education through technology, innovation, and a student-first philosophy since 2009.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/courses.html">Academics</a></li>
+            <li><a href="pages/admissions.html">Admissions</a></li>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/notice.html">News & Notices</a></li>
+          </ul>
+        </div>
+
+        <!-- Programs -->
+        <div>
+          <h4 class="footer-heading">Programs</h4>
+          <ul class="footer-links">
+            <li><a href="pages/courses.html">Primary School (I–V)</a></li>
+            <li><a href="pages/courses.html">Secondary (VI–X)</a></li>
+            <li><a href="pages/courses.html">Senior Secondary (XI–XII)</a></li>
+            <li><a href="pages/courses.html">Science Stream</a></li>
+            <li><a href="pages/courses.html">Commerce Stream</a></li>
+            <li><a href="pages/courses.html">Arts & Humanities</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h4 class="footer-heading">Stay Updated</h4>
+          <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:16px;line-height:1.6;">Subscribe to our newsletter for latest news, events, and academic updates.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Your email address..." required aria-label="Email" />
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe">→</button>
+          </form>
+          <p style="color:var(--text-secondary);font-size:0.8rem;margin-top:12px;">
+            <i class="fas fa-map-marker-alt" style="color:var(--neon-blue);margin-right:6px;"></i>
+            123 Innovation Drive, Tech City, IN 110001
+          </p>
+          <p style="color:var(--text-secondary);font-size:0.8rem;margin-top:8px;">
+            <i class="fas fa-phone" style="color:var(--neon-blue);margin-right:6px;"></i>
+            +91 98765 43210
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 <span>Future Edge Academy</span>. All rights reserved. Designed with <span>♥</span> for tomorrow's leaders.</p>
+        <div style="display:flex;gap:20px;">
+          <a href="#" style="color:var(--text-secondary);font-size:0.85rem;transition:color 0.3s;" onmouseover="this.style.color='var(--neon-blue)'" onmouseout="this.style.color='var(--text-secondary)'">Privacy Policy</a>
+          <a href="#" style="color:var(--text-secondary);font-size:0.85rem;transition:color 0.3s;" onmouseover="this.style.color='var(--neon-blue)'" onmouseout="this.style.color='var(--text-secondary)'">Terms of Use</a>
+          <a href="#" style="color:var(--text-secondary);font-size:0.85rem;transition:color 0.3s;" onmouseover="this.style.color='var(--neon-blue)'" onmouseout="this.style.color='var(--text-secondary)'">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
